@@ -45,9 +45,11 @@ img:hover {
 </head>
  
 <body>
+
+
 <script>
 
-var currentVideo= "Videos/gator-fitness-wide.mp4";
+var currentVideo = "Videos/chase.mp4";
 console.log(currentVideo);
 
 </script>
@@ -62,17 +64,18 @@ console.log(currentVideo);
      
      <div class="video">
      	<video width="1080" height="720" controls>
- 	  	<source src="Videos/gator-fitness-wide.mp4" type="video/mp4">
+ 	  	<source src= "Videos/chase.mp4" type="video/mp4">
 			Your browser does not support the video tag.      	</video>
      </div>
-
+	
  <br />
  
 
     
       
-      <div onclick=myFunction("chase.mp4") class="box chaseAuto"></div>
-      <a href="#"><div onclick=myFunction("gator-fitness-wide.mp4") class="box gator"></div></a>
+      <div onclick=myFunction('chase.mp4') class="box chaseAuto"> </div>
+      
+      <div onclick=myFunction('gator-fitness-wide.mp4') class="box gator"></div></a>
       
       <a href="#"><div class="box lunchPalz"></div></a>
       <a href="#"><div class="box madisonTapRoom"></div></a>
@@ -81,10 +84,18 @@ console.log(currentVideo);
       <a href="#"><div class="box centered strudyne "></div></a>
       
       <script>
+	  
 function myFunction(variable) {
+console.log("inside function")
+console.log(variable)
+
   currentVideo = variable;	
-  console.log("current Video = " + currentVideo)
+  
+ 
+  
+  console.log("current Video = " + "Videos/" + currentVideo)
   return variable;
+
 }
 </script>
     </main>
