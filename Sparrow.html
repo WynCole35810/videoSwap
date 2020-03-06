@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sparrow Demo</title>
+
+<link rel="stylesheet" href="css/style.css">
+<style type="text/css">
+<!--
+body {
+	background-color: #0099FF;
+	margin-bottom: 20px;
+}
+a:visited {
+	color: #FF0000;
+	text-decoration: none;
+}
+a:hover {
+	color: #FFFF00;
+	text-decoration: none;
+}
+a:link {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+a:active {
+	text-decoration: none;
+	color: #00FF00;
+}
+
+
+h1 {
+  color: black;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+-->
+</style>
+
+</head>
+ 
+<body>
+<script>
+
+var currentVideo= "Videos/gator-fitness-wide.mp4";
+console.log(currentVideo);
+
+</script>
+
+	<center>
+	<main> 
+	
+   	 <div class="box banner"><strong>Sparrow Web Video Samples</strong></div>
+     </div>
+      </div>
+      <div class="box logo"></div>
+     
+     <div class="video">
+     	<video width="1080" height="720" controls>
+ 	  	<source src="Videos/gator-fitness-wide.mp4" type="video/mp4">
+			Your browser does not support the video tag.      	</video>
+     </div>
+
+ <br />
+ 
+
+    
+      
+      <div onclick=myFunction("chase.mp4") class="box chaseAuto"></div>
+      <a href="#"><div onclick=myFunction("gator-fitness-wide.mp4") class="box gator"></div></a>
+      
+      <a href="#"><div class="box lunchPalz"></div></a>
+      <a href="#"><div class="box madisonTapRoom"></div></a>
+      <a href="#"><div class="box mixNetworks"></div></a>
+      <a href="#"><div class="box rickNball"></div></a>
+      <a href="#"><div class="box centered strudyne "></div></a>
+      
+      <script>
+function myFunction(variable) {
+  currentVideo = variable;	
+  console.log("current Video = " + currentVideo)
+  return variable;
+}
+</script>
+    </main>
+    </center>
+<br />
+<br />
+</body>
+
+</html>
